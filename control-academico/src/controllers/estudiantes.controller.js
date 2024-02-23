@@ -2,8 +2,8 @@ import express from 'express';
 import User from '../models/usuario.model.js';
 import Course from '../models/materias.model.js';
 import { hashPassword } from '../../utils/validator.js';
-import { isLoggedIn } from '../middlewares/logged.js';
-import { limitCoursesAssign } from '../middlewares/limitCourses.js';
+import { logged } from '../middlewares/logged.js';
+import { limitCourses } from '../middlewares/limitCourses.js';
 
 export const registrar = async (req, res) => {
     try {

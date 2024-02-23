@@ -1,6 +1,6 @@
-import { actualizarMat, asignarMat, buscarMat, eliminarMat, registrarPro } from "../controllers/maestros.controller";
-import { logged } from "../middlewares/logged";
-import { loggedisTeacher } from "../middlewares/loggedIsTeacher";
+import { actualizarMat, asignarMat, buscarMat, eliminarMat, registrarPro } from "../controllers/maestros.controller.js";
+import { logged } from "../middlewares/logged.js";
+import { loggedisTeacher } from "../middlewares/loggedIsTeacher.js";
 
 
 

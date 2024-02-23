@@ -3,18 +3,18 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import cors from 'cors';
 import 'dotenv/config';
-import { hashPassword } from '../utils/validator.js';
-import User from './models/usuario.model.js';
-import connection from '../configs/mongo.js';
-import rutaProfesor from './routes/estudiantes.routes.js';
-import rutaUsuario from './routes/usuarios.routes.js';
-import rutaEstudiante from './routes/estudiantes.routes.js';
-import rutaMateria from './routes/materias.routes.js';
+import { hashPassword } from './utils/validator.js';
+import User from './src/models/usuario.model.js';
+import connection from './configs/mongo.js';
+import rutaProfesor from './src/routes/estudiantes.routes.js';
+import rutaUsuario from './src/routes/usuarios.routes.js';
+import rutaEstudiante from './src/routes/estudiantes.routes.js';
+import rutaMateria from './src/routes/materias.routes.js';
 
 
 
 const app = express();
-const port = process.env.PORT || 3056;
+const port = process.env.PORT || 2880;
 
 
 app.use('/estudiante', rutaEstudiante);

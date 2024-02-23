@@ -1,7 +1,7 @@
 import express from 'express';
 import User from '../models/usuario.model.js';
 import { hashPassword, comparePassword } from '../../utils/validator.js';
-import { isLoggedIn } from '../middlewares/logged.js';
+import { logged } from '../middlewares/logged.js';
 import { generateToken } from '../../utils/jwt.js';
 
 

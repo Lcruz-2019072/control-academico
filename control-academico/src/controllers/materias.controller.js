@@ -1,8 +1,8 @@
 import express from 'express';
 import Course from '../models/materias.model.js';
 import User from '../models/usuario.model.js';
-import { isTeacher } from '../middlewares/loggedIsTeacher.js';
-import { isLoggedIn } from '../middlewares/logged.js';
+import { loggedisTeacher } from '../middlewares/loggedIsTeacher.js';
+import { logged } from '../middlewares/logged.js';
 
 export const crear = async (req, res) => {
     try {
