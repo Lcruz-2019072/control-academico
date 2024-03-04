@@ -6,7 +6,7 @@ import 'dotenv/config';
 import { hashPassword } from './utils/validator.js';
 import User from './src/models/usuario.model.js';
 import connection from './configs/mongo.js';
-import rutaProfesor from './src/routes/estudiantes.routes.js';
+import rutaProfesor from './src/routes/maestros.routes.js';
 import rutaUsuario from './src/routes/usuarios.routes.js';
 import rutaEstudiante from './src/routes/estudiantes.routes.js';
 import rutaMateria from './src/routes/materias.routes.js';
@@ -14,7 +14,7 @@ import rutaMateria from './src/routes/materias.routes.js';
 
 
 const app = express();
-const port = process.env.PORT || 2880;
+const port = process.env.PORT || 3056;
 
 
 app.use('/estudiante', rutaEstudiante);
@@ -36,8 +36,8 @@ app.listen(port, async () => {
   const admin = await User({
     name: 'Armas',
       lastName: 'Chang',
-        username: 'Papa armas',
-          password: await hashPassword('armaschan'),
+        username: 'Papaarmas',
+          password: await hashPassword('12345'),
             courses: [],
               role: 'TEACHER',
   });
